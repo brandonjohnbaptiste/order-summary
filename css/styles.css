@@ -2,21 +2,66 @@
 
 body {
     margin: 0;
-    height: 100vh;
+    height: 100%;
     background-color: hsl(225, 94%, 94%);
     background-image: url('../images/pattern-background-desktop.svg');
     background-size: 100% 45vh;
-    background-repeat: no-repeat;
     display: grid;
-    font-family: 'Red Hat', sans-serif;
+    background-repeat: no-repeat;
+    font-family: 'Red Hat Display', sans-serif;
+    place-content: center;
+}
+#hero-img {
+    margin-top: 15%;
+    border-radius: 1.25rem 1.25rem 0 0;
 }
 .card {
-    place-self: center;
-    height: 800px;
     width: 450px;
     text-align: center;
+    background-color: hsl(225, 100%, 98%);
 }
-.card img {
-    border-radius: 1.25rem 1.25rem 0 0;
-    background-color: transparent;
+.card h1 {
+    font-weight: 900;
+}
+.card p {
+    font-size: 16px;
+    font-weight: 500;
+    width: 80%;
+    margin: 0 auto 20px auto;
+    color: #989AAD;
+}
+.price-card {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    background-color: #D6E1FF;
+    width: 80%;
+    margin: 0 auto;
+    height: 100px;
+}
+.price-card img {
+    width: 60px;
+    justify-self: center;
+    align-self: center;
+}
+.price-text {
+    justify-self: left;
+    align-self: center;
+}
+.price-card h2 {
+    margin: 0;
+    font-weight: 900;
+}
+.price-card p {
+    margin: 0;
+    text-align: left;
+}
+.price-card a {
+    margin: 0;
+    align-self: center;
+}
+.attribution {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    text-align: center;
 }
