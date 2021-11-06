@@ -14,32 +14,41 @@ body {
 #hero-img {
     margin-top: 15%;
     border-radius: 1.25rem 1.25rem 0 0;
+    height: 220px;
+    width: 450px;
 }
 .card {
     width: 450px;
     text-align: center;
     background-color: hsl(225, 100%, 98%);
+    border-radius: 0 0 1.25rem 1.25rem;
 }
 .card h1 {
     font-weight: 900;
+    font-size: 27px;
+    margin-top: 40px;
+    color: hsl(223, 47%, 23%);
 }
 .card p {
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 400;
     width: 80%;
     margin: 0 auto 20px auto;
-    color: #989AAD;
+    color: hsl(224, 23%, 55%);
+    line-height: 25px;
+    font-size: 16px;
 }
 .price-card {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
-    background-color: #D6E1FF;
+    background-color: hsla(225, 100%, 94%, 0.25);
     width: 80%;
     margin: 0 auto;
     height: 100px;
+    border-radius: 10px;
 }
 .price-card img {
-    width: 60px;
+    width: 50px;
     justify-self: center;
     align-self: center;
 }
@@ -48,20 +57,55 @@ body {
     align-self: center;
 }
 .price-card h2 {
-    margin: 0;
     font-weight: 900;
+    font-size: 17px;
+    margin: 0 0 2px;
+    color: hsl(223, 47%, 23%);
+    word-spacing: -3px;
 }
 .price-card p {
     margin: 0;
-    text-align: left;
+    font-size: 17px;
+    font-weight: 400;
+    text-align: center;
 }
 .price-card a {
     margin: 0;
     align-self: center;
+    color: hsl(245, 75%, 52%);
+    font-weight: 700;
+    font-size: 16px;
 }
 .attribution {
     position: absolute;
     bottom: 0px;
     width: 100%;
     text-align: center;
+}
+#payment-btn {
+    background-color: hsl(245, 75%, 52%);
+    width: 80%;
+    margin: 0 auto;
+    color: #fff;
+    height: 50px;
+    border-radius: 10px;
+    display: flex;
+    box-shadow: 0px 10px 15px hsl(224, 23%, 55%);
+}
+
+#payment-btn p {
+    color: #fff;
+    padding-top: 12px;
+
+}
+#cancel-order {
+    margin-top: 30px;
+    padding-bottom: 40px;
+}
+
+#cancel-order a {
+    color: hsl(224, 23%, 55%);
+    font-weight: 900;
+    font-size: 15px;
+    text-decoration: none;
 }
